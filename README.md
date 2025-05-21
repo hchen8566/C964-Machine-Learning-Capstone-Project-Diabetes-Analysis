@@ -132,3 +132,50 @@ File Restrictions
 File name may contain only letters, numbers, spaces, and these symbols: ! - _ . * ' ( )
 File size limit: 200 MB
 File types allowed: doc, docx, rtf, xls, xlsx, ppt, pptx, odt, pdf, csv, txt, qt, mov, mpg, avi, mp3, wav, mp4, wma, flv, asf, mpeg, wmv, m4v, svg, tif, tiff, jpeg, jpg, gif, png, zip, rar, tar, 7z
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REQUIREMENTS TO RUN THE APP NATIVELY
+
+You must have Python 3.8+ installed.
+
+Required Python libraries:
+- streamlit
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- joblib
+
+These are listed in `requirements.txt` and can be installed automatically.
+
+---
+
+HOW TO RUN THE APP
+
+1. Install Python if you don’t already have it: https://www.python.org/downloads/
+
+2. Download or unzip the project folder. You should see:
+
+   - user_app.py 
+   - train_random_forest.py 
+   - diabetes_model.pkl  
+   - diabetes.csv
+   - requirements.txt  
+   - README.txt
+
+3. Open a terminal or command prompt and navigate into the folder
+
+4. Use command 'pip install -r requirements.txt'
+
+5. Launch the app with the command 'streamlit run app.py'
+
+6. App should auto open in your preferred browser via streamlit
+
+---
+
+NOTES
+
+- This is an educational tool built for a machine learning capstone project.
+- It is not intended for clinical or diagnostic use.
+- The model was trained using the publicly available Pima Indian Diabetes dataset.

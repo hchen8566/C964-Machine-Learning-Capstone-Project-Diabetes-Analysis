@@ -5,7 +5,14 @@ import joblib
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
+import logging
 
+# Logging File
+logging.basicConfig(
+    filename='app.log',        # Log file name
+    level=logging.INFO,        # Minimum level to log (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 # Load trained model and dataset
 model = joblib.load("diabetes_model.pkl")
